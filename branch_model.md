@@ -19,9 +19,9 @@ Por fim, o GitHub Flow possibilita a implantação contínua das alterações as
 ## Como usar
 Para realizar qualquer alteração é necessário criar uma ramificação a partir da ramificação dev, mas é importante verificar se há uma ramificação aberta com o mesmo objetivo da sua atividade. Além disso, apenas as ramificações dev e "hotfix" podem ser implementadas diretamente na ramificação principal, para as outras necessidades é necessário seguir os seguintes passos:
 
-1. Crie uma nova ramificação: para adicionar uma nova funcionalidade ao projeto, comece criando uma nova ramificação a partir da ramificação principal ("main"). Você pode nomear a ramificação de acordo com a funcionalidade que está sendo desenvolvida. Por exemplo, se você está adicionando o código de um exercício do Beecrowd, você pode criar uma ramificação chamada "exercicio-beecrowd-####", em que #### é o número da questão do Beecrowd. Caso seja um trabalho, você poderá utilizar a branch chamada "trabalho-nomeDoTrabalho". 
+1. Crie uma nova ramificação: para adicionar uma nova funcionalidade ao projeto, comece criando uma nova ramificação a partir da ramificação principal ("main"). Você pode nomear a ramificação de acordo com a funcionalidade que está sendo desenvolvida. Por exemplo, se você está adicionando o código do header da aplicação, você pode criar uma ramificação chamada "feature_header". 
 
-2. Implemente as alterações: na sua nova ramificação, faça as alterações necessárias no código, por exemplo, para adicionar a função de um exercício ou do trabalho. Além disso, é importante realizar testes nas suas alterações para garantir que elas funcionem corretamente e não introduzam problemas no projeto. É recomendável realizar commits frequentes e descritivos, dividindo o trabalho em pequenas alterações lógicas. Lembre-se de usar o commit semântico, definido no documento guia de estilo de commits.
+2. Implemente as alterações: na sua nova ramificação, faça as alterações necessárias no código para realizar a sua atividade. Além disso, é importante realizar testes nas suas alterações para garantir que elas funcionem corretamente e não introduzam problemas no projeto. É recomendável realizar commits frequentes e descritivos, dividindo o trabalho em pequenas alterações lógicas. Lembre-se de usar o commit semântico, definido no documento guia de estilo de commits.
 
 3. Abra um pull request: quando estiver pronto para enviar suas alterações para revisão e mesclá-las de volta à ramificação principal, abra um pull request. Um pull request é uma solicitação de revisão do código, na qual você pode discutir as alterações com outros membros da equipe, realizar revisões de código e resolver quaisquer problemas identificados. Além disso, caso haja dificuldade em dar continuar em uma atividade, o pull request pode ser utilizado para pedir ajuda de outros desenvolvedores do time, por exemplo, caso algum exercício peça para fazer uma recursiva e você não consegue fazer, abra um pull request e peça ajuda nesta parte.
 
@@ -42,4 +42,4 @@ A fim de manter uma nomenclatura consistente e organizada, comece o nome da rami
 - feature_header
 - feature_exportar_relatorio
 - feature_importar_dataset
-- bug_correcao_da_validacao_do_tamamnho_do_dataset
+- bug_correcao_da_validacao_do_tamanho_do_dataset
