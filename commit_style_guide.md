@@ -11,8 +11,8 @@ As mensagens de commit devem seguir o seguinte formato:
 
 Onde:
 - tipo: Uma palavra que descreve a natureza da mudança (ex: "feat", "fix", "docs", etc.).
-- escopo: Uma palavra que descreve a parte do projeto que está sendo modificada (ex: "Nosso projeto", "Classificador", “Notícias”).
-- assunto: Uma breve descrição do que foi feito (ex: "Adicionar validação de e-mail no formulário de cadastro").
+- escopo: Uma palavra que descreve a parte do projeto que está sendo modificada (ex: "Tratamento do dataset", "Análise dos dados", “Upload do dataset”).
+- assunto: Uma breve descrição do que foi feito (ex: "Adicionar validação do tamanho do dataset").
 - [corpo]: Uma explicação mais detalhada das mudanças feitas, justificativas, etc.
 - [rodapé]: Informações adicionais, como número de issues relacionadas, referências a outras mudanças, etc.
 
