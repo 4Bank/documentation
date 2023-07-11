@@ -1,0 +1,116 @@
+# Lean Inception Relâmpago
+
+## Introdução
+
+Este documento registra a metodologia _Lean Inception Relâmpago_[^1] utilizada na descoberta do nosso produto, etapa crucial para compreender e explorar as necessidades dos usuários, o contexto do problema e as oportunidades de mercado antes de iniciar a fase de desenvolvimento propriamente dita. 
+
+Neste processo, realizamos 2 sessões de 3 horas para discutir, gerar e definir a visão do produto, os objetivos do projeto, as personas e o feature mapping, com todos os membros da nossa equipe, no qual buscamos coletar informações valiosas para tomar decisões informadas sobre o que construir e como construir.
+
+A metodologia se baseia na [Lean Inception](https://www.caroli.org/lean-inception/).
+
+Algumas atividades foram adaptadas utilizando artefatos do Lean Inception padrão retirados [deste template](https://miro.com/miroverse/lean-inception-workshop/).
+
+[^1]: Descrição do autor da Lean Inception Relâmpago: https://www.caroli.org/inception-relampago-template-de-agenda-e-documentos-colaborativos/
+
+
+## Definição
+
+Uma Lean Inception Relâmpago é uma abordagem ágil e colaborativa para iniciar um projeto ou iniciar a fase de descoberta de um novo produto ou iniciativa. Ela se baseia nos princípios do Lean Startup e do Design Thinking para acelerar o processo de alinhamento da equipe e definição da visão do produto.
+
+A Lean Inception Relâmpago geralmente é realizada em um curto período de tempo, que pode variar de alguns dias a uma semana. Durante esse período, a equipe multidisciplinar, que inclui membros de diferentes áreas, como desenvolvimento, design, negócios e usuários finais, trabalha em conjunto para alcançar os seguintes objetivos:
+
+- Compreender o problema: A equipe busca um entendimento claro do problema que está sendo enfrentado e das necessidades dos usuários. Isso envolve a realização de pesquisas, entrevistas e discussões para coletar informações relevantes.
+
+- Definir a visão do produto: Com base na compreensão do problema, a equipe trabalha para estabelecer a visão compartilhada do produto. Isso inclui a definição de metas, objetivos e resultados esperados, além de identificar os principais benefícios e valor que o produto deve fornecer.
+
+- Priorizar e mapear funcionalidades: A equipe colabora para identificar as funcionalidades essenciais do produto que ajudarão a alcançar a visão estabelecida. Essas funcionalidades são priorizadas com base no valor para o usuário e no esforço necessário para implementá-las.
+
+- Definir o MVP (Minimum Viable Product): O MVP é a versão mínima do produto que será desenvolvida para validar as hipóteses e fornecer valor aos usuários. Durante a Lean Inception Relâmpago, a equipe trabalha para definir as funcionalidades-chave que serão incluídas no MVP.
+
+- Identificar riscos e restrições: A equipe também analisa e identifica os principais riscos e restrições que podem afetar o projeto ou produto, para que possam ser abordados adequadamente ao longo do desenvolvimento.
+
+A abordagem Lean Inception Relâmpago enfatiza a colaboração intensiva da equipe, a iteração rápida e a busca por um entendimento comum. Ela ajuda a economizar tempo e esforço, ao permitir que a equipe alinhe rapidamente suas ideias e crie uma visão compartilhada do produto, reduzindo assim os riscos e incertezas iniciais.
+
+
+## Glossário de termos
+
+#### Visão
+
+O entendimento da necessidade do produto guiará as atividades da inception. Os conceitos apresentados inicialmente são apenas uma visão, e a ideia será refinada durante a inception.
+
+#### Objetivos
+
+Cada membro da equipe deve compartilhar o que entende sobre os objetivos do projeto, e isto deve ser discutido para que o time alcance um consenso sobre o que é realmente importante.
+
+#### Personas
+
+Para efetivamente identificar as funcionalidades de um sistema, consideramos importante ter em mente os usuários e seus objetivos. A maneira que normalmente utilizamos para representar estes usuários é através de personas.
+
+Uma persona representa um usuário do sistema, descrevendo não só o seu papel, mas também suas necessidades específicas. Isto cria uma representação realística de usuários, auxiliando o time a descrever funcionalidades do ponto de vista de quem interagirá com o produto final.
+
+#### Features
+
+Feature é um agrupamento de funcionalidades afins. Tal agrupamento nos ajuda com a compreensão sobre o requisito como um todo, bem como das suas partes menores e complementares. O entendimento de feature vai variar de time para time. O importante é que tal agrupamento faça sentido para aquela equipe.
+
+#### Feature Mapping
+
+A partir de um conjunto de features precisamos elaborar um plano de execução. Para isto, adicionamos dados de capacidade da equipe, sequenciamento lógico, prioridade e tempo. O feature mapping é uma representação visual deste plano.
+
+
+## Visão do produto
+
+|                   |                                            |
+| :---------------: | ------------------------------------------ |
+|       Para        | `[cliente final]`                          |
+|       Cujo        | `[problema que precisa ser resolvido]`     |
+|         O         | `[nome do produto]`                        |
+|       É um        | `[categoria do produto]`                   |
+|        Que        | `[benefício chave, razão para adquirí-lo]` |
+| Diferentemente da | `[alternativa da concorrência]`            |
+|  O nosso produto  | `[diferença chave]`                        |
+
+#### É/Não é, Faz/Não faz
+
+| É                  | Não é                  |
+| ------------------ | ---------------------- |
+| `[o produto é um]` | `[o produto não é um]` |
+
+| Faz               | Não faz               |
+| ----------------- | --------------------- |
+| `[o produto faz]` | `[o produto não faz]` |
+
+
+## Objetivos
+
+| Objetivo maior       | Objetivo       | Descrição |
+| -------------------- | -------------- | --------- |
+| `[objetivo maior 1]` | `[objetivo 1]` |           |
+|                      | `[objetivo 2]` |           |
+|                      | `[objetivo 3]` |           |
+|                      |                |           |
+| `[objetivo maior 2]` | `[objetivo 4]` |           |
+
+## Personas
+
+| Persona             | Perfil               | Comportamento           | Necessidades                |
+| ------------------- | -------------------- | ----------------------- | --------------------------- |
+| `[nome da persona]` | `[quem é a persona]` | `[o que a persona faz]` | `[o que a persona precisa]` |
+
+## Features
+
+> #### Instrução:
+>
+> 1. Listar os objetivos como títulos das colunas
+> 2. Listar as personas como títulos das linhas
+> 3. Fazer a seguinte pergunta: o que a persona X precisa no sistema para alcançar o objetivo Y?
+> 4. Repetir o passo 3, e reorganizar as features listadas
+
+| Persona       | `[objetivo 1]` | `[objetivo 2]` | `[objetivo 3]` |
+| ------------- | -------------- | -------------- | -------------- |
+| `[persona 1]` |                |                |                |
+| `[persona 2]` |                |                |                |
+| `[persona 3]` |                |                |                |                                                                       |                                                                          |                                                                          |
+
+## Referências úteis
+
+- [FunRestrospectives](https://www.funretrospectives.com/)
