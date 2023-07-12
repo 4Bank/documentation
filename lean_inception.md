@@ -59,15 +59,27 @@ A partir de um conjunto de features precisamos elaborar um plano de execução. 
 
 ## Visão do produto
 
+Nossa visão do produto foi construída a  partir dos seguintes campos:
+
+- Para [cliente final]: o perfil dos clientes finais ou usuários que serão beneficiados pelo seu produto. Quem são eles? Quais são suas necessidades específicas?
+- Cujo [problema que precisa ser resolvido]: o problema ou desafio que os clientes finais enfrentam e que o nosso produto se propõe a resolver.
+- O [nome do produto]: o nome ou título do produto. Buscando um nome que seja memorável e reflita a essência do que estamos oferecendo.
+- É um [categoria do produto]: a categoria ou classificação do produto.
+- Que [benefício chave, razão para adquirí-lo]: o benefício principal que os clientes finais obterão ao adquirir o produto. Quais são os pontos fortes e únicos que tornam nosso produto atraente e valioso para os clientes?
+- Diferentemente da [alternativa da concorrência]: as alternativas existentes no mercado que tentam abordar o mesmo problema que do nosso produto e como o nosso produto se diferencia e se destaca em relação a essas alternativas. Quais são as vantagens competitivas do nosso produto?
+- O nosso produto [diferença chave]: a diferença chave ou o valor único que o produto oferece em comparação com as alternativas existentes. Uma funcionalidade exclusiva, uma abordagem inovadora, uma melhor relação custo-benefício, entre outros aspectos distintivos.
+
+A visão do produto, ao preencher esses elementos, fornece uma descrição concisa e clara do que o produto representa, quem são os clientes que desejamos atingir, quais problemas pretendemos resolver e como nosso produto se diferencia no mercado, o que ajuda a orientar o desenvolvimento, o marketing e a estratégia geral do produto. Após uma análise individual de cada membro e uma discussão em grupo sobre o que idealizamos para o projeto, definimos a seguinte visão de produto:
+
 |                   |                                            |
 | :---------------: | ------------------------------------------ |
-|       Para        | `[cliente final]`                          |
-|       Cujo        | `[problema que precisa ser resolvido]`     |
-|         O         | `[nome do produto]`                        |
-|       É um        | `[categoria do produto]`                   |
-|        Que        | `[benefício chave, razão para adquirí-lo]` |
-| Diferentemente da | `[alternativa da concorrência]`            |
-|  O nosso produto  | `[diferença chave]`                        |
+|       Para        | Cientistas de dados do time de análise e detecção de fraude de instituições financeiras                          |
+|       Cujo(a)     | Transações bancárias de cartão de crédito necessitam de insights sobre os seus dados para mitigar fraudes     |
+|         O         | 4Banks                       |
+|       É um(a)     | Plataforma de análise de dados                   |
+|        Que        | Fornece insights, de alto e baixo nível detalhando a metodologia usada para facilitar a tomada de decisões |
+| Diferentemente de | Produtos internos utilizados nos sistemas bancários atualmente, outros produtos do pantanal.dev            |
+|  O nosso produto  | É uma plataforma intuitiva que aceita diversos datasets e fornece análises exaustivas gráficas e aprofundadas baseadas na necessidade do cliente                        |
 
 #### É/Não é, Faz/Não faz
 
