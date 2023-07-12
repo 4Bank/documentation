@@ -71,6 +71,8 @@ Nossa visão do produto foi construída a  partir dos seguintes campos:
 
 A visão do produto, ao preencher esses elementos, fornece uma descrição concisa e clara do que o produto representa, quem são os clientes que desejamos atingir, quais problemas pretendemos resolver e como nosso produto se diferencia no mercado, o que ajuda a orientar o desenvolvimento, o marketing e a estratégia geral do produto. Após uma análise individual de cada membro e uma discussão em grupo sobre o que idealizamos para o projeto, definimos a seguinte visão de produto:
 
+<img src="https://github.com/4Banks/documentation/blob/main/images/visao_do_produto.jpeg" alt="Descrição da imagem" width="500" height="800">
+
 |                   |                                            |
 | :---------------: | ------------------------------------------ |
 |       Para        | Cientistas de dados do time de análise e detecção de fraude de instituições financeiras                          |
@@ -83,24 +85,30 @@ A visão do produto, ao preencher esses elementos, fornece uma descrição conci
 
 #### É/Não é, Faz/Não faz
 
-| É                  | Não é                  |
-| ------------------ | ---------------------- |
-| `[o produto é um]` | `[o produto não é um]` |
-
-| Faz               | Não faz               |
-| ----------------- | --------------------- |
-| `[o produto faz]` | `[o produto não faz]` |
+<img src="https://github.com/4Banks/documentation/blob/main/images/e_naoe_faz_naofaz.jpeg" alt="e_naoe_faz_naofaz" width="600" height="600">
 
 
 ## Objetivos
 
-| Objetivo maior       | Objetivo       | Descrição |
-| -------------------- | -------------- | --------- |
-| `[objetivo maior 1]` | `[objetivo 1]` |           |
-|                      | `[objetivo 2]` |           |
-|                      | `[objetivo 3]` |           |
-|                      |                |           |
-| `[objetivo maior 2]` | `[objetivo 4]` |           |
+<img src="https://github.com/4Banks/documentation/blob/main/images/objetivos.jpeg" alt="e_naoe_faz_naofaz" width="800" height="500">
+
+| Objetivo maior                               | Objetivo       | 
+| --------------------                         | -------------- | 
+| `Importar os dados do usuário`               | `(Front) Entrada do dataset` |          
+|                                              | `Validar o dataset` |                 
+|                                              |                  |          
+| `Tratar os dados fornecidos`                 | `Remover valores do dataset (Pré-processamento)` |      
+|                                              | `Transformação dos dados (PCA, T-SNE, UMAP e VAE)` |  
+|                                              | `Balancear as classes (Amostragem)` |  
+|                                              | `Armazenar os dados na cloud` |  
+|                                              |                  |  
+| `Análise dos dados`                          | `Personalização das técnicas de análise` |          
+|                                              | `Treinamento e análise dos modelos de IA` |                 
+|                                              |                  |    
+| `Apresentar o resultado obtido`              | `Apresentar os insights obtidos` |      
+|                                              | `Apresentar resultado das análises e taxas dos modelos` |  
+|                                              | `Exportar relatório` |  
+|                                              |                  | 
 
 ## Personas
 
@@ -110,18 +118,10 @@ A visão do produto, ao preencher esses elementos, fornece uma descrição conci
 
 ## Features
 
-> #### Instrução:
->
-> 1. Listar os objetivos como títulos das colunas
-> 2. Listar as personas como títulos das linhas
-> 3. Fazer a seguinte pergunta: o que a persona X precisa no sistema para alcançar o objetivo Y?
-> 4. Repetir o passo 3, e reorganizar as features listadas
-
-| Persona       | `[objetivo 1]` | `[objetivo 2]` | `[objetivo 3]` |
-| ------------- | -------------- | -------------- | -------------- |
-| `[persona 1]` |                |                |                |
-| `[persona 2]` |                |                |                |
-| `[persona 3]` |                |                |                |                                                                       |                                                                          |                                                                          |
+> 1. Importar dataset
+> 2. Tratamento do dataset
+> 3. Análise dos dados
+> 4. Visualizar o resultado
 
 ## Referências úteis
 
