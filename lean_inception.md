@@ -89,10 +89,13 @@ Em seguida, realizamos uma discussão em grupo e definimos a seguinte visão de 
 
 #### É/Não é, Faz/Não faz
 
+Além disso, realizamos a mesma dinâmica individual e em grupo para definirmos o que a nossa plataforma entrega e não entrega ao usuário final:
+
 <img src="https://github.com/4Banks/documentation/blob/main/images/e_naoe_faz_naofaz.jpeg" alt="e_naoe_faz_naofaz" width="600" height="600">
 
 
 ## Objetivos
+
 
 <img src="https://github.com/4Banks/documentation/blob/main/images/objetivos.jpeg" alt="e_naoe_faz_naofaz" width="800" height="500">
 
@@ -116,9 +119,9 @@ Em seguida, realizamos uma discussão em grupo e definimos a seguinte visão de 
 
 ## Personas
 
-| Persona             | Perfil               | Comportamento           | Necessidades                |
-| ------------------- | -------------------- | ----------------------- | --------------------------- |
-| `[nome da persona]` | `[quem é a persona]` | `[o que a persona faz]` | `[o que a persona precisa]` |
+| Persona             | Perfil                 | Comportamento           | Necessidades                |
+| ------------------- | --------------------   | ----------------------- | --------------------------- |
+| `[nome da persona]` | `Cientistas de dados`  | `[o que a persona faz]` | `[o que a persona precisa]` |
 
 ## Features
 
