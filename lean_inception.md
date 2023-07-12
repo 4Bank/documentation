@@ -99,7 +99,7 @@ Além disso, realizamos a mesma dinâmica individual e em grupo para definirmos 
 
 <img src="https://github.com/4Banks/documentation/blob/main/images/objetivos.jpeg" alt="e_naoe_faz_naofaz" width="800" height="500">
 
-| Objetivo maior                               | Objetivo       | 
+| Objetivo maior                               | Milestones       | 
 | --------------------                         | -------------- | 
 | `Importar os dados do usuário`               | `(Front) Entrada do dataset` |          
 |                                              | `Validar o dataset` |                 
@@ -121,7 +121,7 @@ Além disso, realizamos a mesma dinâmica individual e em grupo para definirmos 
 
 | Persona             | Perfil                 | Comportamento           | Necessidades                |
 | ------------------- | --------------------   | ----------------------- | --------------------------- |
-| `[nome da persona]` | `Cientistas de dados`  | `[o que a persona faz]` | `[o que a persona precisa]` |
+| `Juliana Hosoume`   | `Cientistas de dados`  | `[o que a persona faz]` | `[o que a persona precisa]` |
 
 ## Features
 
