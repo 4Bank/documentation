@@ -69,9 +69,13 @@ Nossa visão do produto foi construída a  partir dos seguintes campos:
 - Diferentemente da [alternativa da concorrência]: as alternativas existentes no mercado que tentam abordar o mesmo problema que do nosso produto e como o nosso produto se diferencia e se destaca em relação a essas alternativas. Quais são as vantagens competitivas do nosso produto?
 - O nosso produto [diferença chave]: a diferença chave ou o valor único que o produto oferece em comparação com as alternativas existentes. Uma funcionalidade exclusiva, uma abordagem inovadora, uma melhor relação custo-benefício, entre outros aspectos distintivos.
 
-A visão do produto, ao preencher esses elementos, fornece uma descrição concisa e clara do que o produto representa, quem são os clientes que desejamos atingir, quais problemas pretendemos resolver e como nosso produto se diferencia no mercado, o que ajuda a orientar o desenvolvimento, o marketing e a estratégia geral do produto. Após uma análise individual de cada membro e uma discussão em grupo sobre o que idealizamos para o projeto, definimos a seguinte visão de produto:
+A visão do produto, ao preencher esses elementos, fornece uma descrição concisa e clara do que o produto representa, quem são os clientes que desejamos atingir, quais problemas pretendemos resolver e como nosso produto se diferencia no mercado, o que ajuda a orientar o desenvolvimento, o marketing e a estratégia geral do produto. 
+
+Para uma análise mais ampla da visão do produto, realizamos uma dinâmica individual em que cada membro da equipe compartilhou sua próprias expectativas de entrega da plataforma:
 
 <img src="https://github.com/4Banks/documentation/blob/main/images/visao_do_produto.jpeg" alt="Descrição da imagem" width="500" height="800">
+
+Em seguida, realizamos uma discussão em grupo e definimos a seguinte visão de produto:
 
 |                   |                                            |
 | :---------------: | ------------------------------------------ |
