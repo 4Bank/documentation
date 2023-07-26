@@ -88,31 +88,78 @@ Este método é semelhante ao SMOTE, mas com uma diferença importante: ele dá 
 
 #### Detecção de Outliers
 
+Outliers e anomalias são pontos de dados incomuns ou excepcionais em um conjunto de dados. No contexto de um dataset de fraude de cartão de crédito, esses valores atípicos podem ter um impacto significativo nas análises e na detecção de atividades fraudulentas. Vamos entender melhor o que são e quais são os impactos de outliers e anomalias nesse tipo de dataset
+
+Os outliers são valores extremos que se desviam significativamente da maioria dos dados em um conjunto. Eles podem surgir devido a erros de registro, falhas nos sistemas ou até mesmo representar casos genuinamente raros. Ao analisar dados de fraude de cartão de crédito, os outliers podem distorcer métricas estatísticas, como a média e o desvio padrão, afetando a interpretação dos dados e influenciando negativamente a eficácia dos modelos de detecção de fraudes. Identificar e lidar adequadamente com os outliers é essencial para garantir a precisão das análises.
+
+As anomalias, por sua vez, são padrões de dados que não seguem as características típicas ou esperadas do conjunto. Em um dataset de fraude de cartão de crédito, as anomalias podem representar transações fraudulentas, que diferem significativamente do comportamento normal do titular do cartão. A detecção dessas anomalias é crucial para identificar atividades suspeitas e proteger os clientes e instituições financeiras contra fraudes. Os métodos de detecção de anomalias, como aprendizado de máquina e técnicas estatísticas, desempenham um papel fundamental nesse processo.
+
+Impactos de Outliers e Anomalias em um Dataset de Fraude de Cartão de Crédito:
+
+Detecção de Fraudes:
+Outliers e anomalias podem afetar a capacidade de detectar fraudes de cartão de crédito de maneira eficiente. Outliers mal tratados podem levar a falsos positivos ou falsos negativos nos modelos de detecção, resultando em perdas financeiras para os clientes ou para a instituição financeira.
+
+Previsões Precisas:
+A presença de outliers pode distorcer as previsões feitas por modelos preditivos, tornando-os menos precisos. Isso pode levar a uma falta de confiança nos resultados e afetar a capacidade de tomar decisões informadas com base nas análises.
+
+Tomada de Decisão:
+Outliers e anomalias podem influenciar negativamente a tomada de decisões ao causar desvios nas análises e interpretações dos dados. Ações inadequadas podem ser tomadas com base em informações distorcidas, impactando a eficiência e a segurança das operações financeiras.
+
+Monitoramento Contínuo:
+Um dataset de fraude de cartão de crédito está em constante evolução, e novos padrões de fraude podem surgir ao longo do tempo. O monitoramento contínuo e a detecção ágil de outliers e anomalias são cruciais para se adaptar às novas ameaças e manter a eficácia dos sistemas de prevenção de fraudes.
+
+Veremos alguns métodos estastíticos de detecção de outliers
+
 ##### Z-Score & Robust Z-score
+
+O Z-score e o Robust Z-score são duas técnicas estatísticas amplamente utilizadas para identificar outliers em um conjunto de dados. Ambos os métodos comparam a diferença entre um ponto de dados e a média do conjunto com a variabilidade dos dados para determinar o quão incomum ou atípico esse ponto é em relação aos demais.
+
+Rodando Z-score e Robust Z-score do dataset, podemos verificar a porcentagem de outliers encontrada em cada feature.
+
+![Distribuição de Classes - Gráfico de Barras - Original](images/data_science_info/z-score.png)
+
+![Distribuição de Classes - Gráfico de Barras - Original](images/data_science_info/rz-score.png)
+
+Podemos ver que esses métodos detectaram bastante outliers em V11, enquanto os dois perceberam pouco em Time e Amount
 
 ##### IQR
 
+IQR (Interquartile Range) é uma medida estatística usada para detectar e identificar outliers em um conjunto de dados. Ele fornece uma maneira robusta de avaliar a dispersão dos valores em torno da mediana e é menos sensível a valores extremos do que outras medidas, como a média e o desvio padrão.
+
+Podemos analisar então denovo as features para encontrar outliers usando o IQR
+
+![Distribuição de Classes - Gráfico de Barras - Original](images/data_science_info/IQR.png)
+
+Podemos ver que o IQR é menos sensível à outliers pela quantidade encontrada em geral, mas ele também destaca o atributo V11.
+
+
 ##### Winsorization (Percentile Capping)
 
+A abordagem do Percentile Capping consiste em definir um limite superior e/ou inferior para os valores do conjunto de dados, substituindo os outliers que ultrapassam esses limites pelos próprios limites. Isso ajuda a mitigar o impacto desses valores atípicos na análise estatística, tornando os dados mais robustos e realistas.
+
+Porém vamos apenas detectar os outliers acima do 99% e abaixo dos 1%, ou seja, vamos encontrar os valores que estão no extremo da distribuição.
+
+![Distribuição de Classes - Gráfico de Barras - Original](images/data_science_info/winsorization.png)
 
 
-#### Detecção de Anomalias
+##### Análise dos outliers
 
-##### Isolation Forest
+No nosso dataset de fraude, outliers e anomalias ajudam a detectar e analisar fraudes, podemos justificar as repostas de modelo de IA analisando os outliers do dado classificado como fraude e então dizer que aquela transação é uma fraude pois contém um conjuto de dados que são outliers sendo uma anomalia.
 
-##### Local Outlier Factor
+Vamos ver quantos outliers os métodos
 
-##### One-Class SVM
+![Distribuição de Classes - Gráfico de Barras - Original](images/data_science_info/outliers_percent.png)
 
-##### Robust Convariance
+Usando a matrix de correlação entre as features
 
+![Análises Superficiais - Tabela de Média, Mediana e Moda - Original](images/data_science_info/correlacao_puro.png)
 
+Percebemos que a feature V11 tem uma correlação positiva com a classe, ou seja, quando maior o V11 mais provável que a classe seja fraude
+Temos então a opção de tratar esses outliers afim de prover dados que melhorem a performace de modelos de IA
 
 #### Tratamentos
 
 ##### Remoção
-
-
 
 ##### Transformação
 
@@ -124,10 +171,18 @@ Este método é semelhante ao SMOTE, mas com uma diferença importante: ele dá 
 
 ###### Box-Cox Transformation
 
-
-
 ##### Imputation
 
+
+#### Detecção de Anomalias
+
+##### Isolation Forest
+
+##### Local Outlier Factor
+
+##### One-Class SVM
+
+##### Robust Convariance
 
 
 ### 1.3.3. Análises Superficiais
