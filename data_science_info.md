@@ -116,9 +116,9 @@ O Z-score e o Robust Z-score são duas técnicas estatísticas amplamente utiliz
 
 Rodando Z-score e Robust Z-score do dataset, podemos verificar a porcentagem de outliers encontrada em cada feature.
 
-![Distribuição de Classes - Gráfico de Barras - Original](images/data_science_info/z-score.png)
+![Detecção de Outliers - Z-Score & Robust Z-score - Z-score](images/data_science_info/z-score.png)
 
-![Distribuição de Classes - Gráfico de Barras - Original](images/data_science_info/rz-score.png)
+![Detecção de Outliers - Z-Score & Robust Z-score - Robust Z-score](images/data_science_info/rz-score.png)
 
 Podemos ver que esses métodos detectaram bastante outliers em V11, enquanto os dois perceberam pouco em Time e Amount
 
@@ -128,7 +128,7 @@ IQR (Interquartile Range) é uma medida estatística usada para detectar e ident
 
 Podemos analisar então denovo as features para encontrar outliers usando o IQR
 
-![Distribuição de Classes - Gráfico de Barras - Original](images/data_science_info/IQR.png)
+![Detecção de Outliers - IQR - IQR](images/data_science_info/IQR.png)
 
 Podemos ver que o IQR é menos sensível à outliers pela quantidade encontrada em geral, mas ele também destaca o atributo V11.
 
@@ -139,7 +139,7 @@ A abordagem do Percentile Capping consiste em definir um limite superior e/ou in
 
 Porém vamos apenas detectar os outliers acima do 99% e abaixo dos 1%, ou seja, vamos encontrar os valores que estão no extremo da distribuição.
 
-![Distribuição de Classes - Gráfico de Barras - Original](images/data_science_info/winsorization.png)
+![Detecção de Outliers - Winsorization (Percentile Capping) - Original](images/data_science_info/winsorization.png)
 
 
 ##### Análise dos outliers
@@ -148,11 +148,11 @@ No nosso dataset de fraude, outliers e anomalias ajudam a detectar e analisar fr
 
 Vamos ver quantos outliers os métodos
 
-![Distribuição de Classes - Gráfico de Barras - Original](images/data_science_info/outliers_percent.png)
+![Detecção de Outliers - Análise dos outliers - Porcentagem de outliers](images/data_science_info/outliers_percent.png)
 
 Usando a matrix de correlação entre as features
 
-![Análises Superficiais - Tabela de Média, Mediana e Moda - Original](images/data_science_info/correlacao_puro.png)
+![Detecção de Outliers - Análise dos outliers - Matrix  de correlação](images/data_science_info/correlacao_puro.png)
 
 Percebemos que a feature V11 tem uma correlação positiva com a classe, ou seja, quando maior o V11 mais provável que a classe seja fraude
 Temos então a opção de tratar esses outliers afim de prover dados que melhorem a performace de modelos de IA
@@ -194,12 +194,7 @@ Análises Superficiais são um dos primeiros passos ao análisar um dataset, com
 Média é o valor da soma e divisão pelo numeros de dados de cada feature. Ele representa o valor central em que os dados tendem a se juntar.
 Com ela é possível entender a tentência central dos dados e descobrir outliers.
 
-<!-- ![Análises Superficiais - Tabela de Média, Mediana e Moda - Original](images/data_science_info/mediamedianamoda.png) -->
-
-
 A mediana é o valor médio, média do maior valor com o menor. Ela é menos sensível à outliers e também é possível decobrir se os dados estão simetricamente distribuídos. Para cada features, as medianas são:
-
-<!-- ![Análises Superficiais - Tabela de Média, Mediana e Moda - Original](images/data_science_info/mediamedianamoda.png) -->
 
 Por fim, a moda é o valor que mais se repete no dataset, sendo a que tem a maior frequência. Com ela, pode-se analisar os picos de distribuição.
 
@@ -213,19 +208,19 @@ No nosso dataset de fraude, os dados já são de certa forma tratados e não pos
 
 Os valores máximos e mínimos conseguem mostrar o range dos dados e quais são os limites do dataset. Os valores para cada features são
 
-![Análises Superficiais - Tabela de Média, Mediana e Moda - Original](images/data_science_info/zero_min_max.png)
+![Análises Superficiais - Valores extremos - Zero, máx , min e vazio](images/data_science_info/zero_min_max.png)
 
 #### Desvio Padrão
 
 O desvio padrão é a medida da dispersão de dados em volta da média, quando possui um valor alto, indica uma variedade maior dos dados e quando tiver um valor menor, dados mais próximos da média. O desvio pode ser usado como medida para outliers e para mostrar a variedade
 
-![Análises Superficiais - Tabela de Média, Mediana e Moda - Original](images/data_science_info/desvio_padrao.png)
+![Análises Superficiais - Desvio Padrão - Desvio Padrão](images/data_science_info/desvio_padrao.png)
 
 #### Amplitudes
 
 A amplitude dos dados é bem sensível à outliers, porém são importantes para análise da disperção dos dados.
 
-![Análises Superficiais - Tabela de Média, Mediana e Moda - Original](images/data_science_info/range.png)
+![Análises Superficiais - Amplitudes - Amplitudes](images/data_science_info/range.png)
 
 #### Skewness e Kurtosis
 
@@ -234,21 +229,21 @@ Podemos verificar se os dados são simetricos se o valor do skew for próximo de
 
 Kurtosis mede o peso da calda do gráfico de distribuição da feature comparado com a normal. Ela indica se os dados possuem valores extremos (outliers) ou são próximos da média. Quando o valor é alto (leptokurtic) indica uma calda pesada com vários outliers, e quando baixo (platykurtic) uma distruição plana com caldas leves e quando zero os dados são iguais a normal.
 
-![Análises Superficiais - Tabela de Média, Mediana e Moda - Original](images/data_science_info/skew_kurt.png)
+![Análises Superficiais - Skewness e Kurtosis - Skew_kurt](images/data_science_info/skew_kurt.png)
 
 
 #### Matrix de Correlação
 
 Com essa matrix conseguimos visualizar e tirar alguns insights de como as features estão correlacionadas. Primeiro com o dataset puro sem nenhum tratamento de classe disbalanceada.
 
-![Análises Superficiais - Tabela de Média, Mediana e Moda - Original](images/data_science_info/correlacao_puro.png)
+![Análises Superficiais - Matrix de Correlação - Puro](images/data_science_info/correlacao_puro.png)
 
 Os pares de features que são mais positivamente correlacionados são [V6, Amount], [Amount, V20 ], [V20, Amount], [Amount, V7], [V7, Amount]
 e os pares mais negativamente correlacionados são [V2, Amount],[Amount, V2], [V3, Time], [Time, V3], [V5, Amount]
 
 No entanto, o disbalancemento faz com que essas relações não sejam muito confiáveis, para isso, vamos aplicar o smote no dataset e rever as correlações
 
-![Análises Superficiais - Tabela de Média, Mediana e Moda - Original](images/data_science_info/correlacao_smote.png)
+![Análises Superficiais - Matrix de Correlação - SMOTE](images/data_science_info/correlacao_smote.png)
 
 Assim nos descobrimos essas relações positivas:
 [V18, V16], [V17, V18], [V18, V17], [V17, V16], [V16, V17]
